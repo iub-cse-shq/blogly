@@ -1,0 +1,11 @@
+table {
+	border-collapse:collapse;
+}
+
+td {
+	background-color: green;
+	border: 3px solid red;
+	font-size:80px;
+	color:black;
+	border-radius: 10px 10px 10px 10px;
+}

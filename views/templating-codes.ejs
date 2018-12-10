@@ -1,0 +1,20 @@
+<!-To get all posts --->
+
+
+<!--controller sends data through routes to view -->
+<!--this data is rendered through the template engine-->
+<!--we iterate over all the data that has been passed using template variables-->
+<!--we also render the values of the variables using . notation (object value notation) -->
+
+<% post.all(forEach(post){ %>
+<%= post.title %>
+<%= post.author %>
+<%= post.published_date %>
+<%= post.category %>
+
+<% post.comments.all(forEach(comment) %>
+<%= comment.author %>
+<%= comment.text %>
+<%= comment.date_commented %>
+
+<% )} %>
